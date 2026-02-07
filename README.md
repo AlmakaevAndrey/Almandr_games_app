@@ -50,12 +50,12 @@ src/
 
 ### Home Page
 
-![Home Page](../Almandr_games_app/src/assets/screens/screen1.png)
+![Home Page](./src/assets/screens/screen1.png)
 
 ### Statistics
 
-![Statistics](../Almandr_games_app/src/assets/screens/screen2.png)
+![Statistics](./src/assets/screens/screen2.png)
 
 ### Catalog
 
-![Catalog](../Almandr_games_app/src/assets/screens/screen3.png)
+![Catalog](./src/assets/screens/screen3.png)
