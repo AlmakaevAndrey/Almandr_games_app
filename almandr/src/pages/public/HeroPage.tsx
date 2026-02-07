@@ -1,9 +1,12 @@
 import { ArrowRight } from 'lucide-react';
 import { GameCard } from '../../components/GameCard';
-import { games, type Game } from '../../data/games';
+import { games } from '../../data/games';
+import type { Game } from '../../shared/types/Game';
+
 interface HeroPageProps {
   onNavigate: (view: 'catalog') => void;
 }
+
 export function HeroPage({ onNavigate }: HeroPageProps) {
   const featuredGames = games.filter((g) => g.featured).slice(0, 6);
   return (

@@ -1,8 +1,10 @@
 type View = 'hero' | 'catalog' | 'admin';
+
 interface NavigationProps {
   activeView: View;
   onNavigate: (view: View) => void;
 }
+
 export function Navigation({ activeView, onNavigate }: NavigationProps) {
   const links: {
     id: View;

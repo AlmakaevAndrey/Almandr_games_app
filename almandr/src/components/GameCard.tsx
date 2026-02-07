@@ -1,11 +1,12 @@
-import React from 'react';
 import { Clock, Users, Star } from 'lucide-react';
 import { GameCover } from './GameCover';
-import type { Game } from '../data/games';
+import type { Game } from '../shared/types/Game';
+
 interface GameCardProps {
   game: Game;
   className?: string;
 }
+
 export function GameCard({ game, className = '' }: GameCardProps) {
   return (
     <div

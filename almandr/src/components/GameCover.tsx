@@ -1,9 +1,11 @@
 import { useMemo } from 'react';
+
 interface GameCoverProps {
   gameId: number;
   colors: string[];
   className?: string;
 }
+
 export function GameCover({ gameId, colors, className = '' }: GameCoverProps) {
   // Deterministic random based on gameId
   const shapes = useMemo(() => {
@@ -14,6 +16,7 @@ export function GameCover({ gameId, colors, className = '' }: GameCoverProps) {
     };
     const numShapes = 3 + Math.floor(random(0) * 4); // 3 to 6 shapes
     const shapeTypes = ['circle', 'rect', 'triangle'];
+
     return Array.from({
       length: numShapes,
     }).map((_, i) => ({
@@ -26,6 +29,7 @@ export function GameCover({ gameId, colors, className = '' }: GameCoverProps) {
       opacity: 0.6 + random(i + 7) * 0.4,
     }));
   }, [gameId, colors]);
+
   return (
     <div className={`relative overflow-hidden bg-cream ${className}`}>
       <svg viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="xMidYMid slice">
