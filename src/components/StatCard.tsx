@@ -4,6 +4,7 @@ import type { Stat } from '../shared/types/Game';
 interface StatCardProps {
   stat: Stat;
 }
+
 export function StatCard({ stat }: StatCardProps) {
   const isUp = stat.trendDirection === 'up';
   return (
